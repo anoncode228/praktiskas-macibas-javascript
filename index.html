@@ -78,21 +78,6 @@ button {
     margin: 0 auto;
 }
 
-.skip-link {
-    position: absolute;
-    z-index: 2;
-    top: 8px;
-    left: 8px;
-    padding: 10px 16px;
-    transform: translateY(-150%);
-    background: var(--accent);
-    color: #17110b;
-}
-
-.skip-link:focus {
-    transform: translateY(0);
-}
-
 .site-header {
     background: #101112;
     border-bottom: 1px solid var(--line);
@@ -374,13 +359,12 @@ button {
     <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 </head>
 <body>
-    <a class="skip-link" href="#saturs">Pāriet uz saturu</a>
-
     <header class="site-header" id="sakums">
         <div class="page-width header-inner">
             <a class="wordmark" href="#sakums">APOLLO <span>11</span></a>
             <nav aria-label="Galvenā navigācija">
                 <ul>
+                    <li><a href="#saturs">Pāriet uz saturu</a></li>
                     <li><a href="#par-izstadi">Par izstādi</a></li>
                     <li><a href="#galerija">Galerija</a></li>
                     <li><a href="#karuselis">Karuselis</a></li>
@@ -622,7 +606,7 @@ button {
     <footer class="site-footer">
         <div class="page-width footer-inner">
             <div>
-                <strong>Apollo 11 · Praktisko mācību komanda</strong>
+                <strong>Apollo 11 · Armands Bidzāns</strong>
                 <p>© 2026 Izstādes noformējums un teksti. Fotogrāfijas: NASA.</p>
             </div>
             <div class="footer-links">

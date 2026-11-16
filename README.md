@@ -9,15 +9,15 @@
 
 ## 2. Komandas dalībnieki
 
-1. [Vārds, uzvārds]
+1. Armands Bidzāns
 2. [Vārds, uzvārds]
 3. [Vārds, uzvārds, ja komandā ir trīs dalībnieki]
 
 ## 3. GitHub repozitorijs
 
-[Ievietojiet komandas GitHub repozitorija saiti un piešķiriet pasniedzējam piekļuvi, ja repozitorijs ir privāts.]
+[Projekta GitHub repozitorijs](https://github.com/anoncode228/praktiskas-macibas-javascript)
 
-To pašu saiti ierakstiet failā `GitHub-saite.txt` iesniegšanai Moodle.
+Tā pati saite ir failā `GitHub-saite.txt` iesniegšanai Moodle.
 
 ## 4. Izmantotās tehnoloģijas
 
@@ -41,9 +41,20 @@ Izmantoti principi no mācību grāmatas *Learn JavaScript and AJAX with w3schoo
 
 ## 6. Projekta palaišana
 
-Projektam nepieciešama tīmekļa pārlūkprogramma. Izvēlieties vienu no tālāk norādītajiem serveriem un vispirms instalējiet tā darbībai nepieciešamo programmu. Ja projektu klonējat no GitHub, nepieciešams arī Git.
+Lejupielādējiet un atspiediet ZIP arhīvu vai klonējiet GitHub repozitoriju. Atveriet projekta mapi, kurā atrodas `index.html`.
 
-### Pamata palaišana ar Python
+### 1. Atvēršana tieši pārlūkprogrammā
+
+1. Atveriet `index.html` ar dubultklikšķi vai pārlūkprogrammā izvēlieties šo failu ar `Ctrl+O`.
+2. Pārbaudiet navigāciju, galeriju un karuseļa pogas. Karuselim pārlūkprogrammā jābūt ieslēgtam JavaScript.
+
+Šim palaišanas veidam pietiek ar tīmekļa pārlūkprogrammu.
+
+### 2. Palaišana ar lokālo serveri
+
+Atveriet termināli projekta mapē un izvēlieties vienu serveri — Python vai Node.js. Pēc servera palaišanas atveriet [http://127.0.0.1:8000/](http://127.0.0.1:8000/) un pārbaudiet vietnes darbību.
+
+#### Python
 
 Instalējiet Python 3 no [python.org](https://www.python.org/downloads/) vai Linux pakotņu pārvaldnieka. Atveriet termināli projekta mapē un palaidiet:
 
@@ -59,9 +70,9 @@ python3 -m http.server 8000 --bind 127.0.0.1
 py -3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Atveriet http://127.0.0.1:8000/. Python serveris nenorāda statisko resursu kešatmiņas termiņu ar `Cache-Control`.
+Python serveris nenorāda statisko resursu kešatmiņas termiņu ar `Cache-Control`.
 
-### Palaišana ar Node.js un kešatmiņu
+#### Node.js ar kešatmiņu
 
 Instalējiet [Node.js](https://nodejs.org/en/download). Projekta mapē palaidiet:
 
@@ -69,7 +80,7 @@ Instalējiet [Node.js](https://nodejs.org/en/download). Projekta mapē palaidiet
 node server.mjs
 ```
 
-Atveriet http://127.0.0.1:8000/. Attēliem, CSS, JavaScript un favicon pārlūka kešatmiņas termiņš ir 30 dienas. HTML pārlūks pārbauda katrā apmeklējumā.
+Attēliem, CSS, JavaScript un favicon pārlūka kešatmiņas termiņš ir 30 dienas. HTML pārlūks pārbauda katrā apmeklējumā.
 
 Pirms cita servera palaišanas apturiet pašreizējo ar Ctrl+C, lai atbrīvotu portu 8000.
 
@@ -85,7 +96,7 @@ cloudflared tunnel --url http://127.0.0.1:8000
 
 ## 7. Komandas ieguldījums
 
-- [Vārds, uzvārds] — [faktiski paveiktais darbs].
+- Armands Bidzāns — izveidoja HTML struktūru un navigāciju, izstrādāja responsīvo CSS noformējumu, atlasīja un sagatavoja galerijas attēlus, kā arī izveidoja JavaScript karuseli.
 - [Vārds, uzvārds] — [faktiski paveiktais darbs].
 - [Vārds, uzvārds, ja komandā ir trīs dalībnieki] — [faktiski paveiktais darbs].
 
