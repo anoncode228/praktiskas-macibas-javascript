@@ -41,12 +41,47 @@ Izmantoti principi no mācību grāmatas *Learn JavaScript and AJAX with w3schoo
 
 ## 6. Projekta palaišana
 
-1. Atspiediet ZIP arhīvu vai klonējiet komandas repozitoriju.
-2. Atveriet mapi `virtuala-izstade/`.
-3. Atveriet failu `index.html` pārlūkprogrammā. Izstādei pietiek ar lokālajiem failiem.
-4. Pārbaudiet saites, galeriju un karuseli gan šaurā, gan platā pārlūka logā.
+Projektam nepieciešama tīmekļa pārlūkprogramma. Izvēlieties vienu no tālāk norādītajiem serveriem un vispirms instalējiet tā darbībai nepieciešamo programmu. Ja projektu klonējat no GitHub, nepieciešams arī Git.
 
-Lai pārbaudītu HTTP kešatmiņu un drošības galvenes, projekta mapē palaidiet `caddy run --config Caddyfile`. Publiskai HTTPS pārbaudei otrā terminālī palaidiet `cloudflared tunnel --url http://127.0.0.1:8000`.
+### Pamata palaišana ar Python
+
+Instalējiet Python 3 no [python.org](https://www.python.org/downloads/) vai Linux pakotņu pārvaldnieka. Atveriet termināli projekta mapē un palaidiet:
+
+**Linux:**
+
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
+```
+
+**Windows (PowerShell):**
+
+```powershell
+py -3 -m http.server 8000 --bind 127.0.0.1
+```
+
+Atveriet http://127.0.0.1:8000/. Python serveris nenorāda statisko resursu kešatmiņas termiņu ar `Cache-Control`.
+
+### Palaišana ar Node.js un kešatmiņu
+
+Instalējiet [Node.js](https://nodejs.org/en/download). Projekta mapē palaidiet:
+
+```sh
+node server.mjs
+```
+
+Atveriet http://127.0.0.1:8000/. Attēliem, CSS, JavaScript un favicon pārlūka kešatmiņas termiņš ir 30 dienas. HTML pārlūks pārbauda katrā apmeklējumā.
+
+Pirms cita servera palaišanas apturiet pašreizējo ar Ctrl+C, lai atbrīvotu portu 8000.
+
+### Publiska HTTPS pārbaude
+
+Instalējiet `cloudflared` pēc [Cloudflare norādēm](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/downloads/). Windows var izmantot arī `winget install --exact --id Cloudflare.cloudflared`.
+
+Atstājiet izvēlēto serveri darboties un otrā terminālī palaidiet:
+
+```sh
+cloudflared tunnel --url http://127.0.0.1:8000
+```
 
 ## 7. Komandas ieguldījums
 
