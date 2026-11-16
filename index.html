@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Virtuāla izstāde par Apollo 11 misiju un pirmo cilvēku nolaišanos uz Mēness.">
+    <meta name="keywords" content="Apollo 11, Mēness, NASA, virtuālā izstāde">
+    <title>Apollo 11 — Pirmie soļi uz Mēness</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#saturs">Pāriet uz saturu</a>
+
+    <header class="site-header" id="sakums">
+        <div class="page-width header-inner">
+            <a class="wordmark" href="#sakums">APOLLO <span>11</span></a>
+            <nav aria-label="Galvenā navigācija">
+                <ul>
+                    <li><a href="#par-izstadi">Par izstādi</a></li>
+                    <li><a href="#galerija">Galerija</a></li>
+                    <li><a href="#karuselis">Karuselis</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="saturs" tabindex="-1">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-photo">
+                <img src="images/oldrins.webp"
+                     srcset="images/oldrins-240.webp 240w,
+                             images/oldrins-360.webp 360w,
+                             images/oldrins-480.webp 480w,
+                             images/oldrins-640.webp 640w,
+                             images/oldrins-800.webp 800w,
+                             images/oldrins-960.webp 960w,
+                             images/oldrins.webp 1100w"
+                     sizes="(max-width: 358px) 359px, (max-width: 560px) 100vw, (max-width: 683px) 533px, (max-width: 800px) 78vw, (max-width: 932px) 625px, (max-width: 1492px) 67vw, 1000px"
+                     width="1100" height="1074"
+                     alt="Bazs Oldrins skafandrā uz Mēness virsmas" loading="lazy">
+            </div>
+            <div class="page-width hero-content">
+                <p class="eyebrow">Virtuālā izstāde / 1969. gada jūlijs</p>
+                <h1 id="hero-title">Pirmie soļi<br>uz Mēness</h1>
+                <p class="hero-description">
+                    Apollo 11 misija astoņās NASA arhīva fotogrāfijās,
+                    sākot ar Saturn V startu un noslēdzot ar skatu uz Zemi atpakaļceļā.
+                </p>
+                <a class="primary-link" href="#galerija">Skatīt kolekciju <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
+
+        <section class="page-width about" id="par-izstadi" aria-labelledby="about-title">
+            <div>
+                <p class="eyebrow">Par izstādi</p>
+                <h2 id="about-title">Astoņas dienas<br>ceļā uz vēsturi</h2>
+            </div>
+            <div class="about-copy">
+                <p>
+                    Apollo 11 startēja 1969. gada 16. jūlijā. Četras dienas vēlāk
+                    Nīls Ārmstrongs un Bazs Oldrins ar moduli <i>Eagle</i> nolaidās
+                    Miera jūrā, kamēr Maikls Kolinss palika Mēness orbītā
+                    komandmodulī <i>Columbia</i>. Apkalpe atgriezās uz Zemes 24. jūlijā.
+                </p>
+                <p>
+                    Izstādes mērķis ir parādīt misijas norisi caur tās fotogrāfijām.
+                    Tajās redzama gan apkalpes sagatavošanās, gan tas, ko astronauti
+                    ieraudzīja no moduļa loga un uz Mēness virsmas.
+                </p>
+            </div>
+        </section>
+
+        <section class="collection" id="galerija" aria-labelledby="gallery-title">
+            <div class="page-width">
+                <div class="section-heading">
+                    <h2 id="gallery-title">Fotogrāfiju kolekcija</h2>
+                    <p class="eyebrow">NASA arhīvs · 8 kadri</p>
+                </div>
+
+                <div class="gallery">
+                    <article class="photo-card">
+                        <img src="images/apkalpe.webp"
+                             srcset="images/apkalpe-240.webp 240w,
+                                     images/apkalpe-360.webp 360w,
+                                     images/apkalpe-480.webp 480w,
+                                     images/apkalpe.webp 599w"
+                             sizes="(max-width: 430px) calc(100vw - 38px), (max-width: 560px) calc(50vw - 29px), (max-width: 800px) calc(50vw - 35px), (max-width: 1050px) calc((100vw - 138px) / 3), (max-width: 1296px) calc((100vw - 158px) / 4), 285px"
+                             width="599" height="900"
+                             alt="Trīs Apollo 11 astronauti apmācību laikā" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="photo-id">S69-34882</p>
+                            <h3>Apkalpe pirms lidojuma</h3>
+                            <p class="photo-description">Apollo 11 astronauti atpūšas apmācību laikā.</p>
+                        </div>
+                    </article>
+
+                    <article class="photo-card" data-carousel>
+                        <img src="images/starts.webp"
+                             srcset="images/starts-240.webp 240w,
+                                     images/starts-360.webp 360w,
+                                     images/starts.webp 478w"
+                             sizes="(max-width: 430px) calc(100vw - 38px), (max-width: 560px) calc(50vw - 29px), (max-width: 800px) calc(50vw - 35px), (max-width: 1050px) calc((100vw - 138px) / 3), (max-width: 1296px) calc((100vw - 158px) / 4), 285px"
+                             width="478" height="1100"
+                             alt="Saturn V paceļas virs starta laukuma" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="photo-id">S69-39525</p>
+                            <h3>Saturn V starts</h3>
+                            <p class="photo-description">Raķete ar Apollo 11 apkalpi paceļas 1969. gada 16. jūlijā.</p>
+                        </div>
+                    </article>
+
+                    <article class="photo-card" data-carousel>
+                        <img src="images/zemes-lekts.webp"
+                             srcset="images/zemes-lekts-240.webp 240w,
+                                     images/zemes-lekts-360.webp 360w,
+                                     images/zemes-lekts-480.webp 480w,
+                                     images/zemes-lekts-640.webp 640w,
+                                     images/zemes-lekts-800.webp 800w,
+                                     images/zemes-lekts-960.webp 960w,
+                                     images/zemes-lekts.webp 1100w"
+                             sizes="(max-width: 430px) calc(100vw - 38px), (max-width: 560px) calc(50vw - 29px), (max-width: 800px) calc(50vw - 35px), (max-width: 1050px) calc((100vw - 138px) / 3), (max-width: 1296px) calc((100vw - 158px) / 4), 285px"
+                             width="1100" height="1100"
+                             alt="Zeme virs krāteriem klātā Mēness horizonta" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="photo-id">AS11-44-6550</p>
+                            <h3>Zemes lēkts</h3>
+                            <p class="photo-description">Skats no Mēness orbītas pirms nosēšanās.</p>
+                        </div>
+                    </article>
+
+                    <article class="photo-card" data-carousel>
+                        <img src="images/noseshanas-vieta.webp"
+                             srcset="images/noseshanas-vieta-240.webp 240w,
+                                     images/noseshanas-vieta-360.webp 360w,
+                                     images/noseshanas-vieta-480.webp 480w,
+                                     images/noseshanas-vieta-640.webp 640w,
+                                     images/noseshanas-vieta.webp 700w"
+                             sizes="(max-width: 430px) calc(100vw - 38px), (max-width: 560px) calc(50vw - 29px), (max-width: 800px) calc(50vw - 35px), (max-width: 1050px) calc((100vw - 138px) / 3), (max-width: 1296px) calc((100vw - 158px) / 4), 285px"
+                             width="700" height="704"
+                             alt="Mēness virsma no nolaišanās moduļa loga" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="photo-id">AS11-37-5454</p>
+                            <h3>Skats pa moduļa logu</h3>
+                            <p class="photo-description">Miera jūra neilgi pēc moduļa <i>Eagle</i> nosēšanās.</p>
+                        </div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="images/zabaka-nospiedums.webp"
+                             srcset="images/zabaka-nospiedums-240.webp 240w,
+                                     images/zabaka-nospiedums-360.webp 360w,
+                                     images/zabaka-nospiedums-480.webp 480w,
+                                     images/zabaka-nospiedums-640.webp 640w,
+                                     images/zabaka-nospiedums-800.webp 800w,
+                                     images/zabaka-nospiedums-960.webp 960w,
+                                     images/zabaka-nospiedums.webp 1095w"
+                             sizes="(max-width: 430px) calc(100vw - 38px), (max-width: 560px) calc(50vw - 29px), (max-width: 800px) calc(50vw - 35px), (max-width: 1050px) calc((100vw - 138px) / 3), (max-width: 1296px) calc((100vw - 158px) / 4), 285px"
+                             width="1095" height="1100"
+                             alt="Oldrina zābaks blakus nospiedumam Mēness augsnē" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="photo-id">AS11-40-5880</p>
+                            <h3>Zābaka nospiedums</h3>
+                            <p class="photo-description">Oldrins nofotografēja savu zābaku un tā nospiedumu Mēness augsnē.</p>
+                        </div>
+                    </article>
+
+                    <article class="photo-card" data-carousel>
+                        <img src="images/oldrins.webp"
+                             srcset="images/oldrins-240.webp 240w,
+                                     images/oldrins-360.webp 360w,
+                                     images/oldrins-480.webp 480w,
+                                     images/oldrins-640.webp 640w,
+                                     images/oldrins-800.webp 800w,
+                                     images/oldrins-960.webp 960w,
+                                     images/oldrins.webp 1100w"
+                             sizes="(max-width: 430px) calc(100vw - 38px), (max-width: 560px) calc(50vw - 29px), (max-width: 800px) calc(50vw - 35px), (max-width: 1050px) calc((100vw - 138px) / 3), (max-width: 1296px) calc((100vw - 158px) / 4), 285px"
+                             width="1100" height="1074"
+                             alt="Oldrins uz Mēness ar Ārmstronga atspulgu ķiveres vizierī" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="photo-id">AS11-40-5903</p>
+                            <h3>Bazs Oldrins uz Mēness</h3>
+                            <p class="photo-description">Šo Oldrina portretu uzņēma misijas komandieris Nīls Ārmstrongs.</p>
+                        </div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="images/modulis-orbita.webp"
+                             srcset="images/modulis-orbita-240.webp 240w,
+                                     images/modulis-orbita-360.webp 360w,
+                                     images/modulis-orbita-480.webp 480w,
+                                     images/modulis-orbita-640.webp 640w,
+                                     images/modulis-orbita-800.webp 800w,
+                                     images/modulis-orbita-960.webp 960w,
+                                     images/modulis-orbita.webp 1100w"
+                             sizes="(max-width: 430px) calc(100vw - 38px), (max-width: 560px) calc(50vw - 29px), (max-width: 800px) calc(50vw - 35px), (max-width: 1050px) calc((100vw - 138px) / 3), (max-width: 1296px) calc((100vw - 158px) / 4), 285px"
+                             width="1100" height="1062"
+                             alt="Eagle modulis Mēness orbītā ar Zemi fonā" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="photo-id">AS11-44-6642</p>
+                            <h3>Atkal orbītā</h3>
+                            <p class="photo-description">Moduļa <i>Eagle</i> pacelšanās pakāpe tuvojas <i>Columbia</i>.</p>
+                        </div>
+                    </article>
+
+                    <article class="photo-card" data-carousel>
+                        <img src="images/atpakalcels.webp"
+                             srcset="images/atpakalcels-240.webp 240w,
+                                     images/atpakalcels-360.webp 360w,
+                                     images/atpakalcels-480.webp 480w,
+                                     images/atpakalcels-640.webp 640w,
+                                     images/atpakalcels-800.webp 800w,
+                                     images/atpakalcels-960.webp 960w,
+                                     images/atpakalcels.webp 1100w"
+                             sizes="(max-width: 430px) calc(100vw - 38px), (max-width: 560px) calc(50vw - 29px), (max-width: 800px) calc(50vw - 35px), (max-width: 1050px) calc((100vw - 138px) / 3), (max-width: 1296px) calc((100vw - 158px) / 4), 285px"
+                             width="1100" height="1100"
+                             alt="Daļēji apgaismota Zeme kosmosa tumsā" loading="lazy">
+                        <div class="photo-caption">
+                            <p class="photo-id">AS11-44-6689</p>
+                            <h3>Zeme atpakaļceļā</h3>
+                            <p class="photo-description">Apkalpe nofotografēja Zemi ceļā no Mēness uz mājām.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-width carousel-section" id="karuselis" aria-labelledby="carousel-title">
+            <div class="section-heading">
+                <h2 id="carousel-title">Misija piecos kadros</h2>
+                <p class="eyebrow">Attēlu karuselis</p>
+            </div>
+            <div class="carousel">
+                <img class="carousel-image" id="slide-image" src="images/starts.webp"
+                     srcset="images/starts-240.webp 240w,
+                             images/starts-360.webp 360w,
+                             images/starts.webp 478w"
+                     sizes="(max-width: 560px) calc(100vw - 38px), (max-width: 800px) calc(100vw - 50px), (max-width: 1296px) calc(60vw - 58.8px), 719px"
+                     width="478" height="1100"
+                     alt="Saturn V paceļas virs starta laukuma" loading="lazy">
+                <div class="carousel-panel">
+                    <div id="slide-caption" aria-live="polite" aria-atomic="true">
+                        <p class="photo-id" id="slide-number">1 / 5</p>
+                        <h3 id="slide-title">Saturn V starts</h3>
+                        <p id="slide-description">Raķete ar Apollo 11 apkalpi paceļas 1969. gada 16. jūlijā.</p>
+                    </div>
+                    <div class="carousel-controls" id="carousel-controls" hidden>
+                        <button id="previous-slide" type="button">Iepriekšējais</button>
+                        <button id="next-slide" type="button">Nākamais</button>
+                        <button id="toggle-playback" type="button">Atsākt automātisko pārslēgšanu</button>
+                    </div>
+                </div>
+            </div>
+            <noscript><p>Lai pārslēgtu karuseļa attēlus, pārlūkā jāieslēdz JavaScript.</p></noscript>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="page-width footer-inner">
+            <div>
+                <strong>Apollo 11 · Praktisko mācību komanda</strong>
+                <p>© 2026 Izstādes noformējums un teksti. Fotogrāfijas: NASA.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.nasa.gov/wp-content/uploads/static/history/ap11ann/kippsphotos/apollo.html">NASA fotogrāfiju arhīvs</a>
+                <a href="#sakums">Uz augšu ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" async></script>
+</body>
+</html>
