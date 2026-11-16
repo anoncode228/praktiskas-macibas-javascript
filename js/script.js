@@ -1,5 +1,17 @@
 "use strict";
 
+const pageStyles = document.getElementById("page-styles");
+
+function activateStyles() {
+    pageStyles.media = "all";
+}
+
+pageStyles.addEventListener("load", activateStyles, { once: true });
+
+if (pageStyles.sheet) {
+    activateStyles();
+}
+
 const slides = document.querySelectorAll("[data-carousel]");
 const slideImage = document.getElementById("slide-image");
 const slideCaption = document.getElementById("slide-caption");

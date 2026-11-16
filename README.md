@@ -46,11 +46,7 @@ Izmantoti principi no mācību grāmatas *Learn JavaScript and AJAX with w3schoo
 3. Atveriet failu `index.html` pārlūkprogrammā. Izstādei pietiek ar lokālajiem failiem.
 4. Pārbaudiet saites, galeriju un karuseli gan šaurā, gan platā pārlūka logā.
 
-### HTTP serveris un drošības pārbaude
-
-Projekta mapē palaidiet `python3 server.py` un atveriet `http://127.0.0.1:8000/`. Lai pārbaudītu publisko HTTPS adresi, otrā terminālī palaidiet `cloudflared tunnel --url http://127.0.0.1:8000`. Serveris pievieno CSP, Trusted Types, COOP un X-Frame-Options. HSTS tiek pievienots HTTPS pieprasījumiem caur tuneli.
-
-Pēc izmaiņām HTML vai JavaScript failā pārstartējiet serveri. Palaišanas brīdī serveris aprēķina skripta SHA-256 vērtību un pievieno to gan CSP galvenei, gan HTML atribūtam `integrity`.
+Lai pārbaudītu HTTP kešatmiņu un drošības galvenes, projekta mapē palaidiet `caddy run --config Caddyfile`. Publiskai HTTPS pārbaudei otrā terminālī palaidiet `cloudflared tunnel --url http://127.0.0.1:8000`.
 
 ## 7. Komandas ieguldījums
 
