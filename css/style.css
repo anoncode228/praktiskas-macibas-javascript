@@ -1,3 +1,4 @@
+/* Lapas krāsas un fonts */
 :root {
     color-scheme: dark;
     --background: #101112;
@@ -12,7 +13,7 @@
 * {
     box-sizing: border-box;
 }
-
+/* Lapas fons un pamatteksts */
 body {
     margin: 0;
     background: var(--background);
@@ -67,7 +68,7 @@ button {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+/* Lapas galvene */
 .site-header {
     background: #101112;
     border-bottom: 1px solid var(--line);
@@ -91,7 +92,7 @@ button {
     min-height: 70px;
     padding: 10px 0;
 }
-
+/* Apollo 11 nosaukums galvenē */
 .wordmark {
     flex-shrink: 0;
     color: var(--text);
@@ -103,13 +104,13 @@ button {
 .wordmark span {
     color: var(--accent);
 }
-
+/* Navigācijas izvēlnes saraksts */
 .site-header ul {
     flex-wrap: wrap;
     padding: 0;
     list-style: none;
 }
-
+/* Navigācijas saites, tostarp “Pāriet uz saturu” */
 .site-header nav a {
     display: inline-block;
     padding: 10px 0;
@@ -122,7 +123,7 @@ button {
 .footer-links a:hover {
     color: var(--accent);
 }
-
+/* Galvenais ievadbloks */
 .hero {
     position: relative;
     isolation: isolate;
@@ -181,7 +182,7 @@ button {
     color: var(--muted);
     font-size: 19px;
 }
-
+/* Saite uz kolekciju */
 .primary-link {
     display: inline-flex;
     align-items: center;
@@ -199,7 +200,7 @@ button {
 .primary-link:hover {
     background: #ffcf94;
 }
-
+/* Sadaļa par izstādi */
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -343,7 +344,7 @@ button {
     border-color: var(--accent);
     color: var(--accent);
 }
-
+/* Lapas kājene */
 .site-footer {
     padding: 26px 0;
     border-top: 1px solid var(--line);
