@@ -109,3 +109,13 @@ controls.hidden = false;
 if (!reducedMotion.matches) {
     startPlayback();
 }
+document.querySelectorAll("a[href]").forEach(function (link) {
+    link.addEventListener("keydown", function (event) {
+        if (event.key === " " && !event.altKey && !event.ctrlKey && !event.metaKey && !event.shiftKey) {
+            event.preventDefault();
+            if (!event.repeat) {
+                link.click();
+            }
+        }
+    });
+});
