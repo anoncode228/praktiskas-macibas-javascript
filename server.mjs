@@ -15,6 +15,15 @@ for (const image of await readdir(new URL("./images/", import.meta.url), { withF
 }
 
 createServer(async (request, response) => {
+    response.setHeader(
+    "Content-Security-Policy",
+    "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; require-trusted-types-for 'script'"
+  );
+  response.setHeader("X-Frame-Options", "DENY");
+  response.setHeader("X-Content-Type-Options", "nosniff");
+  response.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+  response.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+  response.setHeader("Strict-Transport-Security", "max-age=31536000");
   if (request.method !== "GET" && request.method !== "HEAD") {
     response.writeHead(405, { Allow: "GET, HEAD", "Cache-Control": "no-store" });
     response.end();
